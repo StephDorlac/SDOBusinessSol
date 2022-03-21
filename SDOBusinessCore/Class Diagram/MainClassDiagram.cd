@@ -1,0 +1,188 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Class Name="SDOBusinessCore.Entities.Basket">
+    <Position X="3.5" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>BAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Entities\Basket\Basket.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.BasketRuleBase">
+    <Position X="0.75" Y="0.5" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAEAAAAAgAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Entities\Basket\BasketRuleBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.BasketRuleNotNullOrEmpty">
+    <Position X="0.75" Y="3.25" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Business\BasketProcess\BasketRuleNotNullOrEmpty.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.Customer">
+    <Position X="12" Y="4.75" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAgAAEAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Customer\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.Litigation">
+    <Position X="17.25" Y="2.75" Width="2.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SDOBusinessCore.Entities.Litigation.LitigationStatusType">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Litigation\Litigation.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAhAAgAAAAAAAAQAAAAAAAAAAAAAggAAAAAA=</HashCode>
+      <FileName>Entities\Litigation\Litigation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.LitigationType">
+    <Position X="17.25" Y="0.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAgAAAAIAAIAAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Entities\Litigation\LitigationType.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.Order">
+    <Position X="8" Y="0.5" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>UBAQCEiAkAAIgAAACCAAAACoAAAAGAAADAACBBQCAAw=</HashCode>
+      <FileName>Entities\Order\Order.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.Product">
+    <Position X="0.75" Y="7" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAgQAAAAAAAAAAAAQAAAAAEAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Entities\Product\Product.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.ProductCategory">
+    <Position X="0.75" Y="5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAQgAAAAAAAAAAAAAIAAAAA=</HashCode>
+      <FileName>Entities\Product\ProductCategory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.Common.Address">
+    <Position X="12.25" Y="7.5" Width="2.25" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SDOBusinessCore.Entities.Common.Address.AddressType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Common\Address.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>QCAAAAgAAAAAAAAAIAAAAAACAAAAAAACAAAAAJAABAA=</HashCode>
+      <FileName>Entities\Common\Address.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.Common.Country">
+    <Position X="14.75" Y="7.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAQAAAAAAAAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Common\Country.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.Common.Currency">
+    <Position X="17.5" Y="7.5" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAI=</HashCode>
+      <FileName>Entities\Common\Currency.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.Common.CommonResult">
+    <Position X="6.5" Y="8.25" Width="2.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SDOBusinessCore.Entities.Common.CommonResult.ResultStatusAction">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Common\CommonResult.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAIAAAAAA=</HashCode>
+      <FileName>Entities\Common\CommonResult.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.Common.ExtendedProperties">
+    <Position X="9.25" Y="8.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAMAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Common\ExtendedProperties.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.Common.Person">
+    <Position X="12.25" Y="0.5" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SDOBusinessCore.Entities.Common.Person.SexType">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Common\Person.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAABAAEAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>Entities\Common\Person.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.Common.UnitPrice">
+    <Position X="0.75" Y="10" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAEA=</HashCode>
+      <FileName>Entities\Common\UnitPrice.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.Common.PaymentProcessor">
+    <Position X="6" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAgAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Common\PaymentProcessor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SDOBusinessCore.Entities.TransactionOrder">
+    <Position X="4.75" Y="3" Width="3" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="SDOBusinessCore.Entities.TransactionOrder.TransationResultValues">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Order\TransactionOrder.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>CAIAAABAQAAAAAAAAAAAAAAAAAAAABAAAAAAAAAACAA=</HashCode>
+      <FileName>Entities\Order\TransactionOrder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="SDOBusinessCore.Entities.Interfaces.IProduct">
+    <Position X="4.25" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Entities\Product\Interfaces\IProduct.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
