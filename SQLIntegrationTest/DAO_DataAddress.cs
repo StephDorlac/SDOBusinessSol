@@ -16,7 +16,7 @@ namespace SQLIntegrationTest
         [TestMethod]
         public void SaveAddressWithUnknownCustomer()
         {
-            DataAddress dbAddress = new DataAddress();
+            DataAddressSQL dbAddress = new DataAddressSQL();
 
             //Create fakeaddress
             Address address = new Address() { 
@@ -43,7 +43,7 @@ namespace SQLIntegrationTest
         [TestMethod]
         public void SaveNewAddress()
         {
-            DataAddress dbAddress = new DataAddress();
+            DataAddressSQL dbAddress = new DataAddressSQL();
 
             //Create fakeaddress
             Address address = new Address()
@@ -70,7 +70,7 @@ namespace SQLIntegrationTest
         [TestMethod]
         public void GetAddressesByCustomerId()
         {
-            DataAddress dbAddress = new DataAddress();
+            DataAddressSQL dbAddress = new DataAddressSQL();
             var actual = dbAddress.GetAddressesByCustomerId(10);//WARNING, PLEASE SET A CORRECT CUSTOMERID
             actual.Should().NotBeNull();
         }

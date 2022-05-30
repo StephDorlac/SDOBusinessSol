@@ -12,16 +12,16 @@ using System.Collections.Generic;
 
 namespace SDOBusinessCore.DAO
 {
-    public class DataAddress
+    public class DataAddressSQL : IDataAddress
     {
         private String connectionString;
 
         #region Constructors
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DataAddress"/> class.
+        /// Initializes a new instance of the <see cref="DataAddressSQL"/> class.
         /// </summary>
-        public DataAddress()
+        public DataAddressSQL()
         {
             this.connectionString = SettingsManager.ReadSetting("CONNECTIONSTRING");
         }

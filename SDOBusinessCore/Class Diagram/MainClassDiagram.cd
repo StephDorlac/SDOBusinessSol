@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
   <Class Name="SDOBusinessCore.Entities.Basket">
-    <Position X="3.5" Y="0.75" Width="2" />
+    <Position X="3" Y="0.5" Width="2" />
     <TypeIdentifier>
-      <HashCode>BAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <HashCode>BAAAAADAAAAAAABAAAAAAAAAAAAAAAAACAAAAAAAAAQ=</HashCode>
       <FileName>Entities\Basket\Basket.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -24,7 +24,7 @@
   <Class Name="SDOBusinessCore.Entities.Customer">
     <Position X="12" Y="4.75" Width="2.5" />
     <TypeIdentifier>
-      <HashCode>AAIAAgAAEAAAAAAAAAAAAAAAAAAACBAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAEAAgAAEAAAhgAAAAAAAAAAAAAAAABAAAAAAgAAAAA=</HashCode>
       <FileName>Entities\Customer\Customer.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -54,15 +54,22 @@
   </Class>
   <Class Name="SDOBusinessCore.Entities.Order">
     <Position X="8" Y="0.5" Width="3.25" />
+    <NestedTypes>
+      <Enum Name="SDOBusinessCore.Entities.Order.StatusOrderType" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Entities\Order\Order.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>UBAQCEiAkAAIgAAACCAAAACoAAAAGAAADAACBBQCAAw=</HashCode>
+      <HashCode>UBAQCEiI0BAAgEAQAAABAACIAQAAGAAADAgCBBQCAAw=</HashCode>
       <FileName>Entities\Order\Order.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="SDOBusinessCore.Entities.Product">
     <Position X="0.75" Y="7" Width="3.25" />
     <TypeIdentifier>
-      <HashCode>EAAAAAAAgQAAAAAAAAAAAAQAAAAAEAAAAAAAAIAAAAA=</HashCode>
+      <HashCode>EAAAAAAAgQAgAAAAAAAAAAQAAAAAEAAAAAAAAIBAAAA=</HashCode>
       <FileName>Entities\Product\Product.cs</FileName>
     </TypeIdentifier>
     <Lollipop Position="0.2" />
@@ -75,7 +82,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SDOBusinessCore.Entities.Common.Address">
-    <Position X="12.25" Y="7.5" Width="2.25" />
+    <Position X="12" Y="8.25" Width="2.25" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
@@ -87,7 +94,7 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>QCAAAAgAAAAAAAAAIAAAAAACAAAAAAACAAAAAJAABAA=</HashCode>
+      <HashCode>YCAAAAgAAAAAAAAIMAAAAAACAACAAAACAAAAAAAABAA=</HashCode>
       <FileName>Entities\Common\Address.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -146,13 +153,6 @@
       <FileName>Entities\Common\Person.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="SDOBusinessCore.Entities.Common.UnitPrice">
-    <Position X="0.75" Y="10" Width="2.25" />
-    <TypeIdentifier>
-      <HashCode>AAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAEA=</HashCode>
-      <FileName>Entities\Common\UnitPrice.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="SDOBusinessCore.Entities.Common.PaymentProcessor">
     <Position X="6" Y="0.5" Width="1.75" />
     <TypeIdentifier>
@@ -161,7 +161,7 @@
     </TypeIdentifier>
   </Class>
   <Class Name="SDOBusinessCore.Entities.TransactionOrder">
-    <Position X="4.75" Y="3" Width="3" />
+    <Position X="4.75" Y="3.5" Width="3" />
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>

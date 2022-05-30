@@ -16,7 +16,7 @@ namespace SQLIntegrationTest
         [TestMethod]
         public void Is_Customer_Exist()
         {
-            DataCustomer dbCustomer = new DataCustomer();
+            DataCustomerSQL dbCustomer = new DataCustomerSQL();
             Customer customer = new Customer()
             {
                 FirstName = "IntegrationTest_FirstName",
@@ -40,7 +40,7 @@ namespace SQLIntegrationTest
         [TestMethod]
         public void Save_Customer_Get_Customer()
         {
-            DataCustomer dbCustomer = new DataCustomer();
+            DataCustomerSQL dbCustomer = new DataCustomerSQL();
             Customer customer = new Customer()
             {
                 FirstName = "IntegrationTest_FirstName",
@@ -63,7 +63,7 @@ namespace SQLIntegrationTest
         [TestMethod]
         public void ConnectCustomer()
         {
-            DataCustomer dbCustomer = new DataCustomer();
+            DataCustomerSQL dbCustomer = new DataCustomerSQL();
             var actual = dbCustomer.ConnectCustomer("integrationtest@integrationtest.com", "kViOLy+o+GEsh83HjPtpLxnehgxAmBNJ0DNy9MOmDxc=", true);
             actual.Should().NotBeNull();
         }

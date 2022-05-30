@@ -9,21 +9,21 @@ using SDOBusinessCore.Entities.Common;
 
 namespace SDOBusinessCore.DAO
 {
-    public sealed class DataCustomer
+    public sealed class DataCustomerSQL : IDataCustomer
     {
         private String connectionString;
 
         #region Constructor
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DataCustomer"/> class.
+        /// Initializes a new instance of the <see cref="DataCustomerSQL"/> class.
         /// </summary>
-        public DataCustomer()
+        public DataCustomerSQL()
         {
             this.connectionString = SettingsManager.ReadSetting("CONNECTIONSTRING");
         }
 
-        public DataCustomer(String connectionString)
+        public DataCustomerSQL(String connectionString)
         {
             this.connectionString = connectionString;
         }
@@ -176,7 +176,7 @@ namespace SDOBusinessCore.DAO
                         customer.IsWebConnected = true;
                         if (withBasket)
                         {
-                            DataBasket dbBasket = new DataBasket(connectionString);
+                            DataBasketSQL dbBasket = new DataBasketSQL(connectionString);
                             customer.Basket = dbBasket.GetBasketByCustomerEmail(customer.EmailAddress);
                         }
                         return customer;

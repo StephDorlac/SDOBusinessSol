@@ -16,14 +16,14 @@ namespace SQLIntegrationTest
         [TestMethod]
         public void GetBasketByCustomerEmail()
         {
-            DataBasket dbBasket = new DataBasket();
+            DataBasketSQL dbBasket = new DataBasketSQL();
 
             // test unknown customer
             Action act1 = () => dbBasket.GetBasketByCustomerEmail("notexist@notexist.com");
             act1.Should().Throw<Exception>();
 
             //test with real user (create one if not exist)
-            DataCustomer dbCustomer = new DataCustomer();
+            DataCustomerSQL dbCustomer = new DataCustomerSQL();
             Customer customer = new Customer()
             {
                 FirstName = "IntegrationTest_FirstName",
@@ -45,7 +45,7 @@ namespace SQLIntegrationTest
         [TestMethod]
         public void CleanBasket()
         {
-            DataBasket dbBasket = new DataBasket();
+            DataBasketSQL dbBasket = new DataBasketSQL();
             var actual = dbBasket.CleanBasket(1);
             var expected = new CommonResult() { Message = "OK", ResultStatus = CommonResult.ResultStatusAction.Failure };
             actual.ResultStatus.Should().Equals(expected);            

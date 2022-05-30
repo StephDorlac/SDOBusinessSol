@@ -12,7 +12,13 @@ namespace SDOBusinessCore.BasketProcess
     /// </summary>
     public class BasketManager
     {
-        public DataBasket dao = new DataBasket();
+        //public IDataBasket dao = new DataBasketSQL();
+
+        private readonly IDataBasket _dao;
+        public BasketManager(IDataBasket dao)
+        {
+            _dao = dao;
+        }
 
         /// <summary>
         /// Adds the item to Basket
@@ -38,7 +44,7 @@ namespace SDOBusinessCore.BasketProcess
                     });
 
                     //DAO management
-                    var daoResult = dao.InsertProducts(products, basket.BasketId);
+                    var daoResult = _dao.InsertProducts(products, basket.BasketId);
                     if (daoResult.ResultStatus == CommonResult.ResultStatusAction.Success)
                     {
                         result.Message = "OK";
@@ -85,7 +91,7 @@ namespace SDOBusinessCore.BasketProcess
                 basket.Products.Clear();
 
                 //DAO management
-                var daoResult = dao.CleanBasket(basket.BasketId);
+                var daoResult = _dao.CleanBasket(basket.BasketId);
                 if (daoResult.ResultStatus == CommonResult.ResultStatusAction.Success)
                 {
                     result.Message = "OK";

@@ -16,7 +16,7 @@ namespace SQLIntegrationTest
         [TestMethod]
         public void GetAllProducts()
         {
-            DataProduct dbProduct = new DataProduct();
+            DataProductSQL dbProduct = new DataProductSQL();
             var actual = dbProduct.GetAllProducts();
             actual.Should().NotBeNull();
         }
@@ -24,7 +24,7 @@ namespace SQLIntegrationTest
         [TestMethod]
         public void GetProductsByCategoryId()
         {
-            DataProduct dbProduct = new DataProduct();
+            DataProductSQL dbProduct = new DataProductSQL();
             var actual = dbProduct.GetProductsByCategoryId(1);
             actual.Should().NotBeNull();
         }

@@ -7,6 +7,7 @@ using System.Collections.Generic;
 using System.Text;
 using SDOBusinessCore.Business.CustomerProcess;
 using SDOBusinessCore.BasketProcess;
+using SDOBusinessCore.DAO;
 
 namespace SDOBusinessCore.Business.OrderProcess
 {
@@ -15,6 +16,14 @@ namespace SDOBusinessCore.Business.OrderProcess
     /// </summary>
     public class OrderManager
     {
+        private readonly IDataOrder _dao;
+        private readonly IDataBasket _daoBasket;
+
+        public OrderManager(IDataOrder dao)
+        {
+            _dao = dao;
+        }
+
         /// <summary>
         /// Creates the order inside Customer's Orders collection
         /// CreateOrder is used AFTER payment notification
@@ -73,7 +82,7 @@ namespace SDOBusinessCore.Business.OrderProcess
                 //clean basket
                 if (cleanBasket)
                 {
-                    BasketManager bskManager = new BasketManager();
+                    BasketManager bskManager = new BasketManager(_daoBasket);
                     bskManager.CleanBasket(basket);                    
                 }
 

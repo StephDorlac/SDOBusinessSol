@@ -1,4 +1,5 @@
 ﻿using SDOBusinessCore.Business.Common;
+using SDOBusinessCore.DAO;
 using SDOBusinessCore.Entities;
 using SDOBusinessCore.Entities.Common;
 using System;
@@ -9,6 +10,13 @@ namespace SDOBusinessCore.Business.ProductProcess
 {
     public class ProductManager
     {
+        private readonly IDataProduct _dao;
+
+        public ProductManager(IDataProduct dao)
+        {
+            this._dao = dao;
+        }
+
         /// <summary>
         /// Saves the specified product.
         /// </summary>

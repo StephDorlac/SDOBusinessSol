@@ -13,21 +13,21 @@ namespace SDOBusinessCore.DAO
     /// <summary>
     /// 
     /// </summary>
-    public sealed class DataBasket
+    public sealed class DataBasketSQL : IDataBasket
     {
         private String connectionString;
 
         #region Constructor
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DataBasket"/> class.
+        /// Initializes a new instance of the <see cref="DataBasketSQL"/> class.
         /// </summary>
-        public DataBasket()
+        public DataBasketSQL()
         {
             this.connectionString = SettingsManager.ReadSetting("CONNECTIONSTRING");
         }
 
-        public DataBasket(String connectionString)
+        public DataBasketSQL(String connectionString)
         {
             this.connectionString = connectionString;
         }

@@ -13,17 +13,13 @@ namespace SDOBusinessCore.Business.CustomerProcess
     /// </summary>
     public class CustomerManager
     {
-        private DataCustomer dao;
+        private readonly IDataCustomer _dao;
 
-        public CustomerManager()
+        public CustomerManager(IDataCustomer dao)
         {
-            dao = new DataCustomer();
+            _dao = dao;
         }
-
-        public CustomerManager(String connectionString)
-        {
-            dao = new DataCustomer(connectionString);
-        }
+      
 
 
 
@@ -42,7 +38,7 @@ namespace SDOBusinessCore.Business.CustomerProcess
 
             try
             {
-                dao.Save(customer);
+                _dao.Save(customer);
 
                 result.ResultStatus = CommonResult.ResultStatusAction.Success;
             }
@@ -68,7 +64,7 @@ namespace SDOBusinessCore.Business.CustomerProcess
             {
                 if (customer == null)
                     throw new ArgumentNullException("customer", "customer cannot be null !");
-                return dao.IsExist(customer);
+                return _dao.IsExist(customer);
             }
 
             catch (Exception ex)
@@ -98,7 +94,7 @@ namespace SDOBusinessCore.Business.CustomerProcess
         /// <returns></returns>
         public Customer ConnectCustomer(String email, String passWord)
         {
-            return dao.ConnectCustomer(email, passWord, true);
+            return _dao.ConnectCustomer(email, passWord, true);
         }
     }
 }

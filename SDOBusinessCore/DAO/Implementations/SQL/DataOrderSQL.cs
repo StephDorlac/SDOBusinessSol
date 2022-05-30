@@ -13,13 +13,13 @@ using System.Transactions;
 
 namespace SDOBusinessCore.DAO
 {
-    public class DataOrder
+    public class DataOrderSQL : IDataOrder
     {
         private String connectionString;
 
         #region Contructors
 
-        public DataOrder()
+        public DataOrderSQL()
         {
             this.connectionString = SettingsManager.ReadSetting("CONNECTIONSTRING");
         }

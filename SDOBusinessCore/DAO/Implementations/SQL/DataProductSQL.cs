@@ -12,16 +12,16 @@ using System.Collections.Generic;
 
 namespace SDOBusinessCore.DAO
 {
-    public class DataProduct
+    public class DataProductSQL: IDataProduct
     {
         private String connectionString;
 
         #region Constructors
 
         /// <summary>
-        /// Initializes a new instance of the <see cref="DataProduct"/> class.
+        /// Initializes a new instance of the <see cref="DataProductSQL"/> class.
         /// </summary>
-        public DataProduct()
+        public DataProductSQL()
         {
             this.connectionString = SettingsManager.ReadSetting("CONNECTIONSTRING");
         }
